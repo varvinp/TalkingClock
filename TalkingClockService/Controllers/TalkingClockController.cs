@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using  HumanFriendlyClock;
@@ -19,11 +20,20 @@ namespace TalkingClockService.Controllers
         [HttpGet("{time}")]
         public ActionResult<JObject> Get(string time)
         {
-            var humanFriendlyTime = string.IsNullOrEmpty(time) || time == "\"\"" ? Time.GetHumanFriendlyTime(DateTime.Now) : Time.GetHumanFriendlyTime(Convert.ToDateTime(time));
+            try
+            {
+                var humanFriendlyTime = string.IsNullOrEmpty(time) || time == "\"\"" ? Time.GetHumanFriendlyTime(DateTime.Now) : Time.GetHumanFriendlyTime(Convert.ToDateTime(time));
 
-            var jsonData = @"{'Human Friendly Text':" + "'" + humanFriendlyTime.Replace("'", "\\'") + "'" + "}";
+                var jsonData = @"{'Human Friendly Text':" + "'" + humanFriendlyTime.Replace("'", "\\'") + "'" + "}";
 
-            return JObject.Parse(jsonData);
+                return JObject.Parse(jsonData);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw new HttpRequestException("An error occured in rest service when getting response.");
+            }
+            
         }
     }
 }
