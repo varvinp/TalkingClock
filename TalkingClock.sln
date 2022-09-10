@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalkingClockService", "Talk
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HumanFriendlyClock", "HumanFriendlyClock\HumanFriendlyClock.csproj", "{6A770F23-3CD0-4474-8B91-34ECE3D5C21A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalkingClockApp", "TalkingClockApp\TalkingClockApp.csproj", "{EB893AB6-9619-48D4-9821-629CD3BE3548}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HumanFriendlyClock.Tests", "HumanFriendlyClockTest\HumanFriendlyClock.Tests.csproj", "{58A4C084-D294-427D-A1AE-D9EE2EE7CD52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkingClockApp.Test", "TalkingClockApp.Test\TalkingClockApp.Test.csproj", "{D0391C69-971F-4C15-9F3B-BD1E4F141520}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkingClockService.Test", "TalkingClockService.Test\TalkingClockService.Test.csproj", "{D7989F5A-D043-4289-905E-675C46FA8E13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{6A770F23-3CD0-4474-8B91-34ECE3D5C21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A770F23-3CD0-4474-8B91-34ECE3D5C21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A770F23-3CD0-4474-8B91-34ECE3D5C21A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB893AB6-9619-48D4-9821-629CD3BE3548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB893AB6-9619-48D4-9821-629CD3BE3548}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB893AB6-9619-48D4-9821-629CD3BE3548}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB893AB6-9619-48D4-9821-629CD3BE3548}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0391C69-971F-4C15-9F3B-BD1E4F141520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0391C69-971F-4C15-9F3B-BD1E4F141520}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0391C69-971F-4C15-9F3B-BD1E4F141520}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0391C69-971F-4C15-9F3B-BD1E4F141520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A4C084-D294-427D-A1AE-D9EE2EE7CD52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A4C084-D294-427D-A1AE-D9EE2EE7CD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A4C084-D294-427D-A1AE-D9EE2EE7CD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A4C084-D294-427D-A1AE-D9EE2EE7CD52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7989F5A-D043-4289-905E-675C46FA8E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7989F5A-D043-4289-905E-675C46FA8E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7989F5A-D043-4289-905E-675C46FA8E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7989F5A-D043-4289-905E-675C46FA8E13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
